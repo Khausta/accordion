@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico/favicon-16x16.png">
+    <link rel="manifest" href="favicon.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon.ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>YAMAGUCHI</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <!-- блок с img которая при адаптиве не смещает центр, остается неподвижной внутри блока -->
+    <!-- <section class="bg">
+        <div class="container">
+            <div class="container__bg">
+                <picture class="container__pic">
+                    <img src="./img/bg.jpg" alt="bg">
+                </picture>
+            </div>
+        </div>
+    </section> -->
+    <!-- ================================================================ -->
+
+    <!-- блок аккордеон на чистом css -->
+    <!-- вариант 1   -->
+    <!-- октрыть можно все ввкладки, независимо друх  от друга -->
+    <section class="accordeon">
+        <div class="container">
+            <div class="accordeon-item">
+                <input class="accordeon-item__input" type="checkbox" id="accordeon-1"> 
+                <label class="accordeon-item__trigger" for="accordeon-1">
+                    Trigger 1
+                </label>
+                <div class="accordeon-item__content">
+                    Content 1
+                </div>
+            </div>
+
+            <div class="accordeon-item">
+                <input class="accordeon-item__input" type="checkbox" id="accordeon-2">
+                <label class="accordeon-item__trigger" for="accordeon-2">
+                    Trigger 2
+                </label>
+                <div class="accordeon-item__content">
+                    Content 2
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- открываешь один, предыдущий открытый закрывается -->
+    <section class="accordeon-radio">
+        <div class="container">
+            <div class="accordeon-item-2">
+                <input class="accordeon-item-2__input" type="radio" name="accordeon" id="accordeon-2.1"> 
+                <label class="accordeon-item-2__trigger" for="accordeon-2.1">
+                    Trigger 1
+                </label>
+                <div class="accordeon-item-2__content">
+                    Content 1
+                </div>
+            </div>
+            <div class="accordeon-item-2">
+                <input class="accordeon-item-2__input" type="radio" name="accordeon" id="accordeon-2.2">
+                <label class="accordeon-item-2__trigger" for="accordeon-2.2">
+                    Trigger 2
+                </label>
+                <div class="accordeon-item-2__content">
+                    Content 2
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================================================================ -->
+
+    <!-- блок аккордеон c JQuery -->
+    <section class="accordeon-jq">
+        <div class="container">
+            <div class="accordeon-item-jq ">
+                <div class="accordeon-item-jq__trigger">
+                    Trigger 1
+                </div>
+                <div class="accordeon-item-jq__content">
+                    Content 1
+                </div>
+            </div>
+            <div class="accordeon-item-jq ">
+                <div class="accordeon-item-jq__trigger">
+                    Trigger 2
+                </div>
+                <div class="accordeon-item-jq__content">
+                    Content 2
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- блок аккордеон c JS -->
+    <section class="accordeon-js">
+        <div class="container">
+            <div class="accordeon-item-js ">
+                <div class="accordeon-item-js__trigger">
+                    Trigger 1
+                </div>
+                <div class="accordeon-item-js__content">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, exercitationem eaque reprehenderit iste odio veritatis, officia facilis voluptas aut non veniam asperiores corporis a alias tempore. Enim labore repellendus esse?
+                </div>
+            </div>
+            <div class="accordeon-item-js ">
+                <div class="accordeon-item-js__trigger">
+                    Trigger 2
+                </div>
+                <div class="accordeon-item-js__content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sapiente ea dicta, illo aliquid ab facilis beatae quam hic! Nam atque blanditiis inventore veritatis id ullam harum repellat accusantium sint?
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    
+    <script src="js/script.js"></script>
+
+</body>
+</html>

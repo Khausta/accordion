@@ -1,0 +1,35 @@
+@import 'bootstrap-reboot.min';
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url(../fonts/bebasneue/bebasneuebold.ttf);
+    src: url(../fonts/bebasneue/bebasneuebold.woff);
+    src: url(../fonts/bebasneue/bebasneuebold.woff2);
+}
+@font-face {
+    font-family: "Ubuntu";
+    src: url(../fonts/ubuntu/Ubuntu-Light.ttf);
+}
+@font-face {
+    font-family: "Montserrat-Black";
+    
+    src: url(../fonts/montserrat/Montserrat-Black.ttf);
+    font-weight: 900;
+}
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url(../fonts/montserrat/Montserrat-Regular.ttf);
+    font-weight: 400;
+}
+@import 'variables';
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 25px 62px 42px 62px;
+}
+
+
+
+@import 'accordeon/accordeon';
+@import 'cities/cities';

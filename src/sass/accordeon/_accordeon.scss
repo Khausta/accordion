@@ -1,0 +1,141 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+
+
+.accordeon-item {
+    position: relative;
+    margin-bottom: 20px;
+    &__input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        &:checked ~ .accordeon-item__trigger{
+            background-color: #f59393;
+        }
+        &:checked ~ .accordeon-item__content{
+            display: block;
+        }
+        
+    }
+   
+    &__trigger {
+        padding: 20px;
+        border: 1px solid black;
+        display: block;//label is not block element***
+    }
+    &__content{
+        padding: 20px;
+        border: 1px solid black;
+        border-top: none;
+        display: none;
+    }
+}
+
+.accordeon-item-2 {
+    position: relative;
+    margin-bottom: 20px;
+    
+    &__input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        &:checked ~ .accordeon-item-2__trigger{
+            background-color: #f59393;
+        }
+        &:checked ~ .accordeon-item-2__content{
+            display: block;
+        }
+        
+    }
+    &__trigger {
+        padding: 20px;
+        border: 1px solid black;
+        display: block;//label is not block element***
+    }
+    &__content{
+        padding: 20px;
+        border: 1px solid black;
+        border-top: none;
+        display: none;
+    }
+}
+.accordeon-item-jq {
+    margin-bottom: 20px;
+    
+    
+    &__trigger {
+        padding: 20px;
+        border: 1px solid black;
+        display: block;//label is not block element***
+    }
+    &__content{
+        padding: 20px;
+        border: 1px solid black;
+        border-top: none;
+        display: none;
+    }
+
+}
+
+.accordeon-item-jq__active {
+    .accordeon-item-jq {
+        &__trigger {
+            background-color: green;
+        }
+        &__content {
+            display: block;
+        }
+    }
+}
+
+.accordeon-item-js {
+    margin-bottom: 20px;
+    // position: relative;
+    
+    
+    &__trigger {
+        padding: 20px;
+        border: 1px solid black;
+        display: block;//label is not block element***
+    }
+    &__content{
+        // padding: 20px;
+        // border: 1px solid black;
+        // border-top: none;
+        // display: none;
+        // opacity: 0;
+        visibility: hidden;
+        width: 100%;
+        // position: absolute;
+        max-height: 0;
+        // transition: 2s;
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+    
+    }
+
+}
+
+.accordeon-item-js__active {
+    // transition: 2s;
+    .accordeon-item-js {
+        &__trigger {
+            background-color: green;
+        }
+        // &__content {
+        //     // display: block;
+        //     // // opacity: 1;
+        //     // visibility: visible;
+        //     // position: inherit;
+        //     // min-height: fit-content;
+            
+            
+        // }
+    }
+}
